@@ -20,7 +20,7 @@ To run the Zap Interpreter, you need to have [Java](https://www.java.com/en/down
 
 1. Clone the repository to your local machine using the command:
 
-    `git clone https://github.com/42eggs/Zap-Interpreter.git`
+    `git clone https://github.com/42eggs/zap-interpreter.git`
 
 2. Open the project in IntelliJ Idea.
 3. Navigate to the `Zap` class and run the main method with or without arguments.
