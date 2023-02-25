@@ -33,6 +33,8 @@ To run the Zap Interpreter, you need to have [Java](https://www.java.com/en/down
 Here's a sample Zap code that you can use to test the interpreter:
 
 ```
+// this is a comment
+
 var x = 10;
 var y = 5;
 
