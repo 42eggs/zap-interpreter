@@ -98,7 +98,11 @@ public class Scanner {
                 if (match('/')) {
                     // A comment goes until the end of the line.
                     while (peek() != '\n' && !isAtEnd()) advance();
-                } else {
+                }
+                else if(match('*')) {
+                    skipComment();
+                }
+                else {
                     addToken(SLASH);
                 }
                 break;
@@ -123,6 +127,27 @@ public class Scanner {
                 }
                 break;
         }
+    }
+
+    private void skipComment() {
+
+        while (!isAtEnd()) {
+            // reads the char after '*' and increments to the next char
+            char c = advance();
+            /* if c is another '*' and the lookahead (of current which was incremented in advance)
+            reads '/', advance to the next char after  and return */
+            if (c == '*' && peek() == '/') {
+                advance();
+                return;
+            }
+            // increment the line if c is a newline
+            if (c == '\n') {
+                line++;
+            }
+        }
+
+        // raise error only if the comment was not terminated before EOF
+        Zap.error(line, "Unterminated comment.");
     }
 
     private void identifier() {
@@ -180,6 +205,8 @@ public class Scanner {
         if (isAtEnd()) return '\0';
         return source.charAt(current);
     }
+
+
 
     private char peekNext() {
         if (current + 1 >= source.length()) return '\0';

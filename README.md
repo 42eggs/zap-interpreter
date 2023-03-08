@@ -35,6 +35,10 @@ Here's a sample Zap code that you can use to test the interpreter:
 ```
 // this is a comment
 
+/* 
+this is also a comment
+*/
+
 var x = 10;
 var y = 5;
 
