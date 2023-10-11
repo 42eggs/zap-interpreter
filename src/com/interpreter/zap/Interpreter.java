@@ -202,6 +202,12 @@ class Interpreter implements Expr.Visitor<Object>,
             case MINUS:
                 checkNumberOperands(expr.operator, left, right);
                 return (double)left - (double)right;
+            case COMMA:
+                if (right instanceof Double)
+                    return (double)right;
+                else if (right instanceof String)
+                    return (String)right;
+                return isTruthy(right);
             case PLUS:
                 checkNumberOperands(expr.operator, left, right);
                 if (left instanceof Double && right instanceof Double) {

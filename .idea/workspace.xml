@@ -6,8 +6,9 @@
   <component name="ChangeListManager">
     <list default="true" id="7cd1312f-8c77-45f4-8fa2-83800c3c8482" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/interpreter/zap/Scanner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interpreter/zap/Scanner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interpreter/zap/ASTPrinter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interpreter/zap/Interpreter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interpreter/zap/Interpreter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/com/interpreter/zap/Parser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/interpreter/zap/Parser.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,10 +137,10 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.Zap" />
-        <item itemvalue="Application.GenerateAST" />
-        <item itemvalue="Application.ASTPrinter" />
         <item itemvalue="Application.com.interpreter.tools.AstPrinter" />
+        <item itemvalue="Application.GenerateAST" />
         <item itemvalue="Application.AstPrinter" />
+        <item itemvalue="Application.ASTPrinter" />
       </list>
     </recent_temporary>
   </component>
@@ -156,7 +157,14 @@
       <workItem from="1676810674430" duration="293000" />
       <workItem from="1676838940667" duration="16000" />
       <workItem from="1676843752236" duration="7626000" />
-      <workItem from="1678198917755" duration="7996000" />
+      <workItem from="1678198917755" duration="8607000" />
+      <workItem from="1680119743995" duration="939000" />
+      <workItem from="1681983275902" duration="6237000" />
+      <workItem from="1683555155311" duration="606000" />
+      <workItem from="1690018660617" duration="13796000" />
+      <workItem from="1693767562098" duration="9200000" />
+      <workItem from="1696863595282" duration="3431000" />
+      <workItem from="1697008694161" duration="6351000" />
     </task>
     <servers />
   </component>
